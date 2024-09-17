@@ -2,3 +2,41 @@
 
 /* Html section */
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary-color : #E6533C;
+    --secondary-color : #FFFFFF;
+    --text-color : #FFFFFF80;
+    --primary-background : linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+    --light-dark : #222222;
+}
+
+.hero-font-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 93.6px;
+    text-align: left;
+}
+
+.miama-font-title {
+    font-family: 'Miama', sans-serif;                                 
+    font-size: 78px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 93.6px;
+    text-align: left;
+}
+
+.logo-font {
+    font-family: Inter;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 43.2px;
+    text-align: left;
+}
