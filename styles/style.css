@@ -19,6 +19,8 @@ body{
     --light-dark : #222222;
 }
 
+/* Font set up start*/
+
 .hero-font-title {
     font-family: 'Inter', sans-serif;
     font-size: 78px;
@@ -48,11 +50,25 @@ body{
     color: var(--text-color);
 }
 
+.logo-font {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 43.2px;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+/* Font set up end */
+
+
+/* hero section Css start */
 main {
     background: var(--primary-background);
     margin: auto;
-    padding: 60px;
-    height: 715px;
+    padding: 60px 60px 0px 60px;
+    /* min-height: 715px; */
 }
 
 .boxed{
@@ -86,16 +102,6 @@ nav {
     text-align: left;
     padding: 8px 20px 8px 20px;
     color: var(--secondary-color);
-}
-
-.logo-font {
-    font-family: 'Inter', sans-serif;
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 43.2px;
-    text-align: left;
-    color: var(--primary-color);
 }
 
 .hero-section{
@@ -142,7 +148,7 @@ nav {
 
 .img-sec{
     background-image: url('../images/Images2.png');
-    height: 600px;
+    min-height: 650px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -204,4 +210,26 @@ nav {
     height: 40px;
     border-radius: 100%;
     background-color: var(--primary-color);
+}
+
+/* Hero section end */
+
+
+
+
+/* Media query for tablet */
+
+@media only screen and (max-width: 744px) {
+    
+    .hero-section{
+        flex-direction: column;
+        gap: 60px;
+        min-height: 500px;
+    }
+
+    nav{
+        padding: 0px;
+    }
+
+
 }
