@@ -119,6 +119,24 @@ body{
     color: var(--secondary-color);
 }
 
+.team-name{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+.footer-sub-head{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
 /* Font set up end */
 
 
@@ -502,6 +520,141 @@ td{
     color: var(--text-color);
 }
 
+.form-section>form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:8px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.form-section>form>:last-child{
+    grid-column: span 2;
+}
+
+input,select{
+    height: 48px;
+    padding: 12px 40px 12px 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border:none;
+    color: var(--text-color);
+}
+
+select option{
+    background-color: black !important;
+}
+
+
+/* Meet our team start */
+
+.team{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.team-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:rgba(255, 255, 255, 0.1);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 18px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.team-card>div{
+    min-height: 272px;
+    color: var(--secondary-color);
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.card-single1{
+    background-image: url(../images/trainer1.png);
+    background-position: center top;
+    background-size: cover;
+}
+
+.card-single2{
+    background-image: url(../images/trainer2.png);
+    background-position: center top;
+    background-size: cover;
+}
+
+.card-single3{
+    background-image: url(../images/trainer3.png);
+    background-position: center top;
+    background-size: cover;
+}
+
+.card-single4{
+    background-image: url(../images/trainer4.png);
+    background-position: center top;
+    background-size: cover;
+}
+
+.card-single5{
+    background-image: url(../images/trainer5.png);
+    background-position: center top;
+    background-size: cover;
+}
+
+.card-single6{
+    background-image: url(../images/trainer6.png);
+    background-position: center top;
+    background-size: cover;
+}
+
+.inner-text{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 10px 15px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+}
+/* meet our team ends */
+
+/* footer */
+
+    footer{
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 50px 0px;
+    }
+
+    .main-footer{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 15%;
+    }
+
+    .foot-menu>ul{
+        display: block;
+        list-style: none;
+        color: var(--text-color);
+        margin-top: 20px;
+    }
+
+    .foot-menu>ul>li{
+        padding: 10px 0px;
+        font-family: Inter;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        text-align: left;
+        color: var(--text-color);
+    }
+
+/* footer */
 /* Media query for tablet */
 
 @media only screen and (max-width: 744px) {
