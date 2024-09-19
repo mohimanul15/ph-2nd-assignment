@@ -92,7 +92,7 @@ body{
 }
 
 .card-text-des{
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -101,6 +101,24 @@ body{
     color: var(--text-color);
     margin-top: 8px;
 }
+
+.training-card-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-align: left;
+}
+
+.sub-section-head{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 33.6px;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
 /* Font set up end */
 
 
@@ -294,7 +312,7 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 60px 0px;
+        margin: 80px 0px;
     }
 
     .extra-mile-image{
@@ -310,8 +328,179 @@ nav {
         justify-content: space-evenly;
     }
 
+    .image-top{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1.2fr;
+    }
+
+    .image-bottom{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1.3fr;
+    }
+
+    .height-200{
+        min-height: 200px;
+    }
+
+    .feature-image1{
+        background-image: url('../images/exercise1.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .feature-image2{
+        background-image: url('../images/exercise2.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .feature-image3{
+        background-image: url('../images/exercise3.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .feature-image4{
+        background-image: url('../images/exercise4.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .feature-image5{
+        background-image: url('../images/exercise5.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .feature-image6{
+        background-image: url('../images/exercise6.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .overlay1{
+        background-color:#06FFD280;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: end;
+        color: black;
+        /* opacity: .5; */
+    }
+
+    .overlay2{
+        background-color: #FF00004D;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: start;
+        color: #FFFFFF;
+        /* opacity: .5; */
+    }
+
+    .overlay3{
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: end;
+        color: #FFFFFF;
+        /* opacity: .5; */
+    }
+
+    .overlay4{
+        background-color:rgba(0, 0, 0, 0.5);
+        padding: 20px 15px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: right;
+        color: #FFFFFF;
+        /* opacity: .5; */
+    }
+
+    .overlay5{
+        background-color: rgba(66, 255, 0, 0.3);
+        padding: 20px 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: end;
+        color: #FFFFFF;
+        /* opacity: .5; */
+    }
+
+    .overlay6{
+        background: rgba(0, 71, 255, 0.3);
+
+        padding: 20px 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: end;
+        color: #FFFFFF;
+        /* opacity: .5; */
+    }
+
+    .training-excer{
+        padding: 40px 0px;
+    }
+
 
 /* Habit section End */
+
+
+/*  Calculator Part */
+
+.calculator-part{
+    padding: 50px 10px;
+    margin: 80px 0px;
+    background-color: rgba(34, 34, 34, 1);
+}
+
+
+.left{
+    text-align: left;
+}
+
+.bmi-chart{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.inner-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+th{
+    text-align: left;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+}
+
+table,td,th{
+    border: 1px solid var(--text-color);
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+td{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: var(--text-color);
+}
 
 /* Media query for tablet */
 
