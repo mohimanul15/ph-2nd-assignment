@@ -467,6 +467,25 @@ nav {
         padding: 40px 0px;
     }
 
+    .et{
+        gap:20px;
+    }
+
+    .et>:first-child{
+        background-color: rgba(255, 255, 255, .2);
+        width: 70px;
+        height: 70px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-image{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
 
 /* Habit section End */
 
@@ -532,7 +551,7 @@ td{
     grid-column: span 2;
 }
 
-input,select{
+input,select,textarea{
     height: 48px;
     padding: 12px 40px 12px 20px;
     box-sizing: border-box;
@@ -540,6 +559,11 @@ input,select{
     background-color: rgba(255, 255, 255, 0.1);
     border:none;
     color: var(--text-color);
+    width: calc(100% - 1px);
+}
+
+textarea{
+    height: 130px;
 }
 
 select option{
@@ -674,6 +698,27 @@ select option{
     }
 
 /* footer */
+
+/* Contact Us Section */
+
+.contact-us{
+    padding: 40px 10px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 50%,black 50%);
+    border-radius: 18px;
+}
+
+.contact-form>.section-heading{
+    padding: 30px 0px;
+}
+
+.contact-image{
+    width: 40%
+}
+
+.contact-image>img{
+
+}
+
 /* Media query for tablet */
 
 @media only screen and (max-width: 744px) {
@@ -746,11 +791,30 @@ select option{
         padding-top: 10px;
     }
 
-    input, select{
+    input, select, textarea{
         padding: 12px 15px;
         max-width: 100%;
     }
 
+}
+
+@media screen and (max-width: 577px) {
+    .extra-mile-section{
+        flex-direction: column;
+    }
+
+    .extra-mile-section button{
+        max-width: none !important;
+    }
+
+    .extra-mile-image{
+        width: auto;
+        height: 190px;
+    }
+
+    .extra-mile-section>:last-child{
+        align-items: center !important;
+    }
 }
 
 @media screen and (max-width: 680px){
@@ -908,7 +972,7 @@ select option{
         line-height: 19px;
     }
 
-    input, select{
+    input, select, textarea{
         padding: 12px 5px;
         max-width: 100%;
     }
