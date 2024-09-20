@@ -270,7 +270,7 @@ nav {
     background: #FFFFFF1A;
     padding: 10px 20px;
     border-radius: 10px;
-    width: 193px;
+    max-width: 193px;
     height: 64px;
     backdrop-filter: blur(7px);
 }
@@ -635,6 +635,7 @@ select option{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         gap: 15%;
+        padding-bottom: 40px;
     }
 
     .foot-menu>ul{
@@ -654,6 +655,24 @@ select option{
         color: var(--text-color);
     }
 
+    .foot-rights{
+        font-family: Inter;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        text-align: center;
+        color: var(--text-color);
+        padding-top: 20px;
+    }
+
+    hr{
+        border: 2px solid rgba(255, 255, 255, 0.1)
+    }
+
+    .nav-mobile{
+        display: none;
+    }
+
 /* footer */
 /* Media query for tablet */
 
@@ -669,5 +688,250 @@ select option{
         padding: 0px;
     }
 
+    .habit-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .habits-section>section{
+        max-width: 744px;
+        margin: 0px 10px;
+    }
+
+    .extra-mile-section{
+        padding: 20px 30px;
+        gap: 30px;
+    }
+
+    .extra-mile-image{
+        width: 256px;
+        height: 319px;
+    }
+
+    .tablet{
+        font-size: 36px;
+    }
+
+    .inner-section{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    table{
+        width: fit-content;
+    }
+
+    .team-card{
+        max-width: fit-content;
+        margin: 0px 15px;
+    }
+
+    .main-footer{
+        padding: 0px 15px;
+        min-height: fit-content;
+    }
+
+    .main-footer>:first-child{
+        grid-column: span 3;
+    }
+
+    .main-footer>:last-child{
+        grid-column: span 2;
+    }
+
+    hr{
+        margin-top: 80px;
+    }
+
+    .rights-reserved{
+        padding-top: 10px;
+    }
+
+    input, select{
+        padding: 12px 15px;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 680px){
+    .nav-desktop{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: block;
+    }
+}
+
+/* Media Query for mobile */
+
+@media only screen and (max-width: 393px) {
+
+    .button-sec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .btn-main{
+        padding: 16px 20px;
+    }
+
+    .btn-secon{
+        padding: 16px 20px;
+    }
+
+    .nav-desktop{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: block;
+    }
+
+    nav{
+        padding: 0px 10px;
+    }
+
+    .hero{
+        padding: 8px;
+    }
+
+    main{
+        padding: 20px 5px;
+    }
+
+    .hero-font-title,.miama-font-title{
+        font-size: 36px;
+        line-height: 43.2px;
+    }
+
+    .hero-title{
+        max-width: 282px;
+    }
+
+    .hero{
+        padding: 20px;
+    }
+
+    .number-font{
+        font-size: 30px;
+        line-height: 30.24px;
+    }
+
+    .number-card{
+        max-width: 145px;
+        padding: 10px 10px;
+        height: 75px;
+        box-sizing: border-box;
+    }
+
+    .sub-number-font{
+        font-size: 9.83px;
+        line-height: 15px;
+    }
+
+    .img-sec{
+        justify-content: space-around;
+        max-height: 588px;
+    }
+
+    .section-heading{
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .habits-section{
+        margin: 10px 0px;
+    }
+
+    .section-description{
+        line-height: 24px;
+        /* padding: 10px; */
+        margin: 10px 0px;
+    }
+
+    .habit-cards{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px 0px;
+        gap: 15px;
+    }
+
+    .extra-mile-section{
+        flex-direction: column;
+    }
+
+    .extra-mile-section button{
+        max-width: none !important;
+    }
+
+    .extra-mile-image{
+        width: auto;
+        height: 190px;
+    }
+
+    .extra-mile-section>:last-child{
+        align-items: center !important;
+    }
+
+    .habits-section>:last-child{
+        padding: 0px 10px;
+    }
+
+    .image-top{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image-bottom{
+        grid-template-columns: .8fr 1fr;
+    }
+
+    .image-top>:last-child, .image-bottom>:last-child{
+        display: none;
+    }
+
+    .height-200{
+        min-height: 128px;
+    }
+
+    .bmi-calc>:first-child{
+        padding:0px 15px;
+    }
+
+    .calculator-part{
+        margin: 30px 0px;
+        padding: 20px 10px;
+    }
+
+    .sub-section-head{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    input, select{
+        padding: 12px 5px;
+        max-width: 100%;
+    }
+
+    .team-title{
+        padding: 0px 15px;
+    }
+
+    .team-card{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: -webkit-fill-available;
+    }
+
+    .main-footer .logo-font{
+        font-size: 70px;
+    }
+
+    .main-footer{
+        display: block;
+    }
+
+    .main-footer>div{
+        padding-top: 15px;
+    }
 
 }
